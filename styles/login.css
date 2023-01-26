@@ -10,6 +10,8 @@ body{
     margin: 0;
     height: 100vh;  
     position: absolute;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 a:link, a:visited{
@@ -22,6 +24,7 @@ a:focus{
 }
 
 nav{
+    z-index: 1;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -29,14 +32,8 @@ nav{
     height: 3rem;
     font-size: 1.2rem;
     color: var(--blue);
-    box-shadow: 0px 0px 0px white;
-    transition-propriety: box-shadow;
-    transition: 1s;
-}
-
-nav:hover{
+    background-color:white;
     box-shadow: 2px 0px 5px black;
-    transition: 1s;
 }
 
 nav p{
@@ -66,7 +63,7 @@ nav p:last-child{
     height: 23rem;
     border-radius: 0.5rem;
     background-color: var(--blue);
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 0px 10px 50px black;
 }
 
 .center-div h1{
@@ -133,4 +130,116 @@ nav p:last-child{
 .login-span{
     color: var(--yellow);
     text-decoration: noe;
+}
+
+.left-yellow{
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--yellow);
+    transform: rotate(30deg);
+    margin-left: -15rem;
+}
+
+.right-yellow{
+    position: absolute;
+    width: 50rem;
+    height: 60rem;
+    margin-left: 67rem;
+    margin-top: -60rem;
+    transform: rotate(30deg);
+    background-color: var(--yellow);
+}
+
+.blue-round-one{
+    position: absolute;
+    background-color: var(--blue);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+    margin-top: -25rem;
+    margin-left: 5rem;
+    box-shadow: 2px 0px 5px black;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-time-function: linear;
+}
+
+.blue-round-one img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+    object-fit: cover;
+    margin-left: 0.0rem;
+    margin-top: 0.0rem;
+}
+
+.blue-round-two{
+    position: absolute;
+    background-color: var(--blue);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    margin-top: -10rem;
+    margin-left: 20rem;
+    box-shadow: 2px 0px 5px black;
+    animation-name: bounce-two;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-time-function: linear;
+}
+
+.blue-round-three{
+    position: absolute;
+    background-color: var(--blue);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    margin-top: -15rem;
+    margin-left: 60rem;
+    box-shadow: 2px 0px 5px black;
+    animation-name: bounce-three;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-time-function: linear;
+}
+
+.blue-round-three img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    object-fit: cover;
+}
+
+@keyframes bounce{
+    from{
+        margin-top: -24rem;
+    }
+
+    to{
+        margin-top: -25rem;
+    }
+}
+
+@keyframes bounce-two{
+    from{
+        margin-top: -9rem;
+    }
+
+    to{
+        margin-top: -11rem;
+    }
+}
+
+@keyframes bounce-three{
+    from{
+        margin-top: -15.5rem;
+    }
+
+    to{
+        margin-top: -14rem;
+    }
 }
