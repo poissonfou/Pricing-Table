@@ -12,6 +12,49 @@ body{
     height: 135vh;
 }
 
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus{
+    outline: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: var(--blue);
+    box-shadow: 2px 0px 10px black;
+    z-index: 2; 
+    position: fixed;
+}
+
+nav p{
+    margin-top: 0.5rem;
+}
+
+nav p:hover{
+    cursor: pointer;
+}
+
+nav p:first-child{
+    margin-left: 3.4rem;
+}
+
+nav p:nth-child(2){
+    margin-left: 5rem;
+}
+
+nav p:last-child{
+    margin-left: 5rem;
+}
+
 .background{
     background-color: var(--blue);
     width: 100%;
