@@ -9,6 +9,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     height: 100vh;  
+    position: absolute;
 }
 
 a:link, a:visited{
@@ -23,7 +24,7 @@ a:focus{
 nav{
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 3rem;
     font-size: 1.2rem;
@@ -56,4 +57,80 @@ nav p:nth-child(2){
 
 nav p:last-child{
     margin-left: 5rem;
+}
+
+.center-div{
+    margin-left: 32rem;
+    margin-top: 8em;
+    width: 20rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue);
+    box-shadow: 5px 5px 10px black;
+}
+
+.center-div h1{
+    position: absolute;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.center-div p{
+    z-index: 1;
+    margin-top: 0rem;
+}
+
+.inner-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.inner-div input{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.5rem; 
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.inner-div input::placeholder{
+    color: grey;
+    padding-left: 0.5rem;  
+}
+
+.inner-div input:focus::placeholder{
+    color: transparent;
+}
+
+.inner-div p{
+    margin-bottom: 0.5rem;
+}
+
+.inner-div input:focus{
+    outline: none;
+}
+
+.text-div{
+    position: fixed;
+    margin-top: 16rem;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+}
+
+.security{
+    color: white;
+    text-decoration: underline;
+}
+
+.security:hover{
+    cursor:pointer;
+}
+
+.login-span{
+    color: var(--yellow);
+    text-decoration: noe;
 }
