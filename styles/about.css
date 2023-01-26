@@ -116,7 +116,6 @@ nav p:last-child{
 }
 
 .round-blue-two{
-    z-index: 200;
     position: absolute;
     width: 2rem;
     height: 2rem;
