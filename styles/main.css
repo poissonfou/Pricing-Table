@@ -1,0 +1,111 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    height: 100vh;  
+    display: flex;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus{
+    outline: none;
+}
+
+h1{
+    font-size: 5rem;
+    margin-left: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 0;   
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 50.4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: var(--blue);
+    box-shadow: 0px 0px 0px white;
+    transition-propriety: box-shadow;
+    transition: 1s;
+}
+
+nav:hover{
+    box-shadow: 2px 0px 5px black;
+    transition: 1s;
+}
+
+nav p{
+    margin-top: 0.5rem;
+}
+
+nav p:hover{
+    cursor: pointer;
+}
+
+nav p:first-child{
+    margin-left: 3.4rem;
+}
+
+nav p:nth-child(2){
+    margin-left: 5rem;
+}
+
+nav p:last-child{
+    margin-left: 5rem;
+}
+
+.side-div{
+    position: absolute;
+    background-color: var(--blue);
+    height: 100%;
+    width: 35rem;
+    margin-left: 50.4rem;
+    box-shadow: -5px 0px 15px var(--blue);
+}
+
+.side-div button{
+    border: none;
+    border-radius: 0.5rem;
+    width: 25rem;
+    height: 4rem;
+    background-color: var(--yellow);
+    margin-left: 5rem;
+    margin-top: 30rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 10px 5px 15px black;
+    transform: translateY(0px);
+    transition-propriety: transform;
+    transition: 1s;
+}
+
+.side-div button:focus{
+    outline: none;
+}
+
+.side-div button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 2s;
+}
+
+.side-div h3{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin-left: 5rem;
+}
