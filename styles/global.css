@@ -1,0 +1,163 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+    height: 135vh;
+}
+
+.background{
+    background-color: var(--blue);
+    width: 100%;
+    height: 22rem;
+    position: absolute;
+    z-index: 0;
+}
+
+.background h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: medium;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.background p{
+    color: white;
+    font-weight: small;
+    margin: 0;
+}
+
+.center-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-top: 16.5rem;
+    width: 65rem;
+    height: 20rem;  
+    position:absolute;
+}
+
+.one, .two, .three{
+    z-index: 2;
+    border-radius: 0.5rem;
+    background-color: white;
+    width: 19rem;
+    height: 30rem;
+    margin-left: .5rem;
+}
+
+.one:hover, .two:hover, .three:hover{
+  cursor: pointer;
+}
+
+.title{
+    width: 100%;
+    height:3rem;
+    margin: 0;
+    border-radius-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.title p{
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-top: 1rem
+}
+
+.review{
+    background-color: var(--blue);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    opacity: 0;
+}
+
+.review:hover{
+    cursor:pointer;
+}
+
+.enroll{
+    width: 15rem;
+    height: 2.5rem;
+    border-color: var(--blue);
+    border-style: solid; 
+    border-radius: 0.5rem;   
+    border-width: 0.1rem;
+    color: var(--blue);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 14rem;
+    background-color: white;
+}
+
+.enroll:hover{
+    cursor: pointer;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    color: var(--gray);
+    font-size: small;
+    margin: 0;
+    position: relative;
+}
+
+.item img{
+    margin-right: 0.5rem;
+}
+
+.price{
+    text-align: left;
+    margin-left: 2rem;
+}
+
+span{
+    font-size: medium;
+}
+
+.span-mes{
+    font-size: small;
+    color: var(--gray);
+}
+
+.price-text{
+    color: var(--gray);
+    font-size: small;
+    text-align: left;
+    margin-left: 2rem;  
+}
+
+@keyframe bounce{
+    from{
+        transition: translateY(0px);
+    }
+
+    to{
+        transition: translateY(-20px);
+    }
