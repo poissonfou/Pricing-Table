@@ -43,16 +43,42 @@ nav p:hover{
     cursor: pointer;
 }
 
-nav p:first-child{
-    margin-left: 2.3rem;
+.ps{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
 }
 
 nav p:nth-child(2){
-    margin-left: 5rem;
+    margin-left: 2rem;
+}
+
+nav p:nth-child(3){
+    padding-left: 2rem;
 }
 
 nav p:last-child{
-    margin-left: 5rem;
+    margin-left: 2rem;
+}
+
+#brand-icon-blue{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--blue);
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#brand-icon-yellow{
+    z-index: 1;
+    position:absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: var(--yellow);
+    margin-left: 1.5rem;
+    margin-top: -2rem;
 }
 
 .top{
